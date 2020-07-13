@@ -61,7 +61,7 @@ h2 {
 /* --------------------------------   Header   ----------------------------------- */
 
 .header {
-    background: url("/img/Elon_musk_main.jpg");
+    background: url("./img/Elon_musk_main.jpg");
     width: 50rem;
     min-width: 20;
     background-size: cover;
