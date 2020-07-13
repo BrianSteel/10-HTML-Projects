@@ -1,0 +1,1 @@
+10 HTML projects to perfect my skills.
