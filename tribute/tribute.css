@@ -5,7 +5,7 @@
     --quote2: #b83b5e;
     --heading: 'Bangers', cursive;
     --quote: 'Indie Flower', cursive;
-    --text-main-date:'Noto Sans JP', sans-serif;
+    --text-main-date: 'Noto Sans JP', sans-serif;
 }
 
 /* --------------------------------   tags css  ----------------------------------- */
@@ -18,7 +18,6 @@ body {
 }
 
 header {
-    height: 100vh;
     display: flex;
 }
 
@@ -43,9 +42,7 @@ footer {
     margin: 3.5rem auto;
     padding: 3rem;
     border-radius: 20px;
-    width: 60rem;
     background: #ddd;
-    height: 85vh;
 }
 
 h2 {
@@ -70,6 +67,7 @@ h2 {
     background-position: center;
     filter: grayscale(100);
     margin: 2rem;
+    height: 89vh;
 }
 
 .quote1 {
@@ -78,6 +76,14 @@ h2 {
     font-size: 2rem;
     margin: auto;
     text-align: start;
+}
+
+.quote1 p {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
 }
 
 /* --------------------------------   Header   ----------------------------------- */
@@ -109,6 +115,7 @@ h2 {
     width: 15%;
     font-family: var(--text-main-date);
     font-weight: bold;
+    padding-right: 0.5rem;
 }
 
 .container-info .detail {
@@ -152,7 +159,7 @@ sidebar img {
     font-family: var(--text-main-date);
 }
 
-.container-info-side .info div:last-child{
+.container-info-side .info div:last-child {
     border-bottom: 1px solid grey;
 }
 
@@ -166,7 +173,6 @@ footer .footer-item {
 
 .quote {
     font-family: var(--quote);
-    width: 60rem;
     font-size: 1.4rem;
     margin: 2rem auto;
     text-align: center;
@@ -180,15 +186,111 @@ footer .footer-item {
     color: var(--quote3);
 }
 
-footer p:last-child {
-    font-size: 7rem;
-    font-family: var(--quote1);
-    margin: auto;
-    color: rgb(84, 84, 230)
-}
-
 /* --------------------------------  footer  ----------------------------------- */
 
 /* ----------------------------------media queries----------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: none;
+    }
+    sidebar{
+        background: rgba(232, 80, 91, 0.2);
+        border-radius: 30%;
+       
+    }
+    .content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    main {
+        width: 100%;
+        padding-right: 0;
+        margin: auto;
+    }
+    sidebar {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .quote1 {
+        margin: 1rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .quote1 p {
+        font-size: 1.5rem;
+    }
+    footer h2 {
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+    }
+    footer p {
+        font-size: 1.2rem!important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    sidebar{
+        background: initial;
+        border-radius: none;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .quote1 p {
+        font-size: 1.3rem;
+    }
+    .container-info .detail {
+        font-size: 0.8rem;
+    }
+    .container-info .date {
+        font-size: 0.8rem;
+    }
+    .container-info-side .info {
+        font-size: 0.8rem;
+    }
+    .container-info-side .title {
+        font-size: 0.8rem;
+    }
+    footer h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;
+    }
+    footer p {
+        font-size: 1rem!important;
+        color: var(--quote2)!important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    .quote1 p {
+        font-size: 1rem;
+    }
+    .container-info .detail {
+        font-size: 0.7rem;
+    }
+    .container-info .date {
+        font-size: 0.7rem;
+    }
+    .container-info-side .info {
+        font-size: 0.7rem;
+    }
+    .container-info-side .title {
+        font-size: 0.7rem;
+    }
+    footer h2 {
+        font-size: 1.2rem;
+        letter-spacing: 0.5rem;
+    }
+    footer p {
+        font-size: 0.85rem!important;
+    }
+}
 
 /* ----------------------------------media queries----------------------------------------- */
